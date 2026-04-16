@@ -182,7 +182,7 @@ namespace Foody
         [Test]
         public void DeleteNonExistingFood_ShouldReturnBadRequest()
         {
-            string nonExistingId = "999999999";
+            string nonExistingId = "99999  9999";
             RestRequest request = new RestRequest($"/api/Food/Delete/{nonExistingId}", Method.Delete);
             RestResponse response = client.Execute(request);
 
